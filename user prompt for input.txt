@@ -1,0 +1,10 @@
+const prompt = require("prompt-sync")();
+
+let score = prompt("What is your test score?");
+
+console.log(score);
+
+#To install prompt packages
+
+type the following in your command prompt;-
+npm install prompt-sync
