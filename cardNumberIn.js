@@ -1,7 +1,7 @@
 function cardNumberIn(array){
 
-	let valid = '';
-	let issuer = '';
+	let valid = "";
+	let issuer = "";
 
 	if (array[0] == 4 && array.length == 16){
 		issuer = "Visa";  valid = true;
@@ -14,8 +14,7 @@ function cardNumberIn(array){
 	} else{
 		valid = false; issuer = "Invalid card number";
 	};
-	let details = [valid, issuer];
-	return details;
+	return issuer;
 };
 
 
