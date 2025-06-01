@@ -21,4 +21,5 @@ function cardNumberIn(array){
 let array = [3,9,8,4,5,6,8,4,7,9,5,4,3,7,6];
 console.log(cardNumberIn(array))
 
-module.export = cardNumberIn
+module.exports = {cardNumberIn};
+
