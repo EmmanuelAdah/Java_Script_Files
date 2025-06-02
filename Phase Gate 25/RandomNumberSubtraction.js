@@ -6,10 +6,10 @@ let counter = 0
 while (counter != 10){
 	let firstNumber = Math.floor(Math.random() * 20);
 	let secondNumber = Math.floor(Math.random() * 20);
+	console.log("What is ",firstNumber," - ",secondNumber);
 
 	for (let count = 0; count <= 2; count++){
 		if (firstNumber > secondNumber && count != 2){
-			console.log("What is ",firstNumber," - ",secondNumber);
 			let answer = prompt("Enter answer: ")
 			if (answer == (firstNumber - secondNumber)){
 				correctAnswers += 1;
