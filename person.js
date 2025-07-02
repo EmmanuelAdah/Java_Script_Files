@@ -7,8 +7,8 @@ password : "52663"
 person.color = "Black"
 person.password = "new password: 12345"
 //delete person.color;
-//console.log(person.name);
-//console.log(person['name']);
+console.log(person.name);
+console.log(person['name']);
 //process.stdout.write
 //console.log(person); #(To print whatever there is in 'Object' person)
 let emma = (Object.keys(person));
