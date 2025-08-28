@@ -23,6 +23,12 @@ test("that the function returns odd numbers", () => {
 })
 
 describe("createCounter", () => {
+    let counter;
+    beforeEach(() => {
+        counter = createCounter();
+        return counter;
+    })
+
     test("that the initial count is 0", () => {
         const counter = createCounter();
         expect(counter.getCount()).toBe(0) //toBe for primitive types
@@ -31,5 +37,22 @@ describe("createCounter", () => {
         const counter = createCounter()
         counter.increment()
         expect(counter.getCount()).toBe(1)
+    })
+    test("that counter decreases by 1", () => {
+        const counter = createCounter()
+        counter.decrement()
+        expect(counter.getCount()).toBe(-1)
+    })
+    test("that count increment by 2", () => {
+        const count =createCounter()
+        count.increment()
+        count.increment()
+        expect(count.getCount()).toBe(2)
+    })
+    test("that count reset to 0", () => {
+        const counter = createCounter()
+        counter.increment()
+        counter.reset()
+        expect(counter.getCount()).toBe(0)
     })
 })
