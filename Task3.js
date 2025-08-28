@@ -13,4 +13,4 @@ function armstrongNumber(userInput){
     return isArmstrong
 };
 
-console.log(armstrongNumber(153))
+console.log(armstrongNumber(9474))
