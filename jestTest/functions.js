@@ -19,6 +19,12 @@ const createCounter = function(){
         },
         increment:() => {
             count++;
+        },
+        decrement: () => {
+            count--
+        },
+        reset: () => {
+           count = 0
         }
     }
 }
