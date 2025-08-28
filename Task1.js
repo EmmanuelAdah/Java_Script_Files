@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")()
 function longestWordInSentence(sentence){
     let words = sentence.split(" ")
     let max = words[0]
-    
+
     for(let item of words){
         if (item.length > max.length){
                 max = item
@@ -26,10 +26,10 @@ function longestWord(sentence){
             word += sentence.charAt(index);
         }
     }
-    let longestWord = (word.length > max.length) ? word : max;
-    return longestWord;
+    let largestWord = (word.length > max.length) ? word : max;
+    return largestWord;
 }
 
 sentence = prompt("Enter your sentence: ")
-console.log(longestWord(sentence))
+console.log("The longest word in the sentence is:",longestWord(sentence))
 //console.log(longestWordInSentence())
