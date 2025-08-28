@@ -19,19 +19,23 @@ function sortedListOfCustomers(){
     return array.filter(array => Object.values(array) >= 80)
 }
 
-function namesOfCustomers(){
+function customersList(){
     array = [{"Ebuka": 90}, {"Femi":89}, {"John":70}, {"Caleb": 78}, {"Emma": 81}]
     for (let item = 0; item < array.length; item++){
         let temp = array[item]
-        if(array[item] >= 80){
-            
+        if((array[array.length - item]) >= 80 && array[item] < 80){
+            array[item] = array[array.length - item]
+            array[array.length - item] = temp
         }
-    
+        if (array[array.length - item] < 80){
+            array[array.length - item].pop()
+        }
     }
-    return names.sort()
+    return array
 }
 
 
 console.log(namesOfCustomers())
 console.log(sortedListOfCustomers())
+console.log(customersList())
 //console.log(removingBugs())
